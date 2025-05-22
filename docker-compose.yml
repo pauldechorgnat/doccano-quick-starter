@@ -13,5 +13,8 @@ services:
     volumes:
       - ./raw-data:/raw-data
       - ./annotated-data:/annotated-data
+      - ./settings:/settings
     env_file:
       - .env
+    environment:
+      - DOCCANO_URL=http://doccano:8000

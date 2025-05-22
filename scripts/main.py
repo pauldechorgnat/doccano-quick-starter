@@ -25,7 +25,7 @@ argument_parser.add_argument(
 )
 argument_parser.add_argument(
     "--label-settings-file",
-    default="./label-settings.json",
+    default="./settings/label-settings.json",
     help="Path to file containing label description",
 )
 argument_parser.add_argument(

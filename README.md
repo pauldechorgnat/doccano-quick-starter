@@ -71,7 +71,7 @@ docker compose up --build
 Pour lancer les scripts, il suffit de faire:
 
 ```sh
-docker compose scripts python main.py action --option1 option1
+docker compose run scripts python main.py action --option1 option1
 ```
 
 ## Exemple d'utilisation avec Docker
