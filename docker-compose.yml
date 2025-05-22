@@ -1,0 +1,17 @@
+services:
+  doccano:
+    image: 'doccano/doccano:latest'
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
+  
+  scripts:
+    build:
+      context: scripts
+      dockerfile: Dockerfile
+    volumes:
+      - ./raw-data:/raw-data
+      - ./annotated-data:/annotated-data
+    env_file:
+      - .env
